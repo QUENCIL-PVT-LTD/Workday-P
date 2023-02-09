@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate</title>
+  <link rel="stylesheet" href="/CSS/Certificate.css">
+</head>
+
+<body>
+
+  <h2 style="text-align: center;">Certificate Form</h2>
+
+  <div class="container">
+    <label for="logindid"><b>Enter Document Id</b></label>
+    <input type="text" id="pdfId" placeholder="Enter Document Id" maxlength="8" required>
+    <embed id="pdfViewer" src="" width="300px" height="200px" />
+    <button type="button" onclick="displayPDF()">Submit</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" onclick="location.reload()">Cancel</button>
+  </div>
+
+  <script src="/JS/Certificate.js"></script>
+
+</body>
+
+</html>
